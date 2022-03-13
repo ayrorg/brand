@@ -4,5 +4,6 @@
   ],
   "rules": {
     "import/no-default-export": "off"
-  }
+  },
+  "ignorePatterns": "tokens/**"
 }

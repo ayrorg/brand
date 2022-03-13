@@ -1,12 +1,12 @@
-import { merge } from 'theme-ui';
 import system from '@theme-ui/preset-system';
+import { merge } from 'theme-ui';
 import colors from '../tokens/colors';
 import fonts from '../tokens/fontFamilies';
 import fontWeights from '../tokens/fontWeights';
 import radii from '../tokens/radii';
-import { text } from './text';
 import { buttons } from './buttons';
 import { styles } from './styles';
+import { text } from './text';
 
 export const theme = merge(system, {
   sizes: {
