@@ -1,8 +1,8 @@
 {
-  "name": "@bjerk/brand",
+  "name": "@ayr/brand",
   "version": "1.0.1",
-  "repository": "github:bjerkio/brand",
-  "author": "Bjerk AS",
+  "repository": "github:ayrorg/brand",
+  "author": "AYR AS",
   "license": "Apache-2.0",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -21,7 +21,7 @@
   },
   "prettier": "@cobraz/prettier",
   "devDependencies": {
-    "@bjerk/eslint-config": "^1.0.0",
+    "@bjerk/eslint-config": "^2.0.1",
     "@cobraz/prettier": "^2.0.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -31,7 +31,6 @@
     "@theme-ui/components": "^0.13.0",
     "@theme-ui/style-guide": "^0.13.0",
     "@types/react": "^17.0.38",
-    "eslint": "^8.6.0",
     "figmagic": "^4.4.4",
     "jest": "^27.4.5",
     "lodash": "^4.17.21",

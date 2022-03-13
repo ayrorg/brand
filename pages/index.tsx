@@ -11,7 +11,6 @@ import {
   Heading,
   Input,
   Label,
-  // Link,
   NavLink,
   Radio,
   Select,
@@ -136,13 +135,14 @@ const Sheet: React.FC<{ theme: Theme; name: string }> = ({
           <Card>
             <Heading>Spacing</Heading>
             <Flex sx={{ flexWrap: 'wrap', gap: 4 }}>
-              {scaleAsArray(theme.space).map((s, key) => (
+              {/* TODO: Add scale back in */}
+              {/* {scaleAsArray(theme.space).map((s, key) => (
                 <Box key={key} sx={{ textAlign: 'center' }}>
                   {key}
                   <Box key={s} sx={{ width: s, height: s, bg: 'text' }} />
                   {s}
                 </Box>
-              ))}
+              ))} */}
             </Flex>
           </Card>
           <Card>
