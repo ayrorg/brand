@@ -1,0 +1,51 @@
+{
+  "name": "@bjerk/brand",
+  "version": "1.0.1",
+  "repository": "github:bjerkio/brand",
+  "author": "Bjerk AS",
+  "license": "Apache-2.0",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "source": "index.ts",
+  "types": "./dist/esm/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.theme.json && tsc -p tsconfig.theme.cjs.json",
+    "build:watch": "tsc --watch -p tsconfig.theme.json && tsc --watch -p tsconfig.theme.cjs.json",
+    "dev": "next",
+    "lint": "eslint .",
+    "docs:build": "next build && next export",
+    "download": "figmagic"
+  },
+  "prettier": "@cobraz/prettier",
+  "devDependencies": {
+    "@bjerk/eslint-config": "^1.0.0",
+    "@cobraz/prettier": "^2.0.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mdx-js/loader": "^1.6.21",
+    "@mdx-js/react": "^1.6.22",
+    "@next/mdx": "^12.0.7",
+    "@theme-ui/components": "^0.13.0",
+    "@theme-ui/style-guide": "^0.13.0",
+    "@types/react": "^17.0.38",
+    "eslint": "^8.6.0",
+    "figmagic": "^4.4.4",
+    "jest": "^27.4.5",
+    "lodash": "^4.17.21",
+    "next": "^12.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
+    "theme-ui": "^0.13.0",
+    "typescript": "^4.5.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "theme-ui": "^0.13"
+  }
+}
