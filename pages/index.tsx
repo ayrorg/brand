@@ -26,7 +26,7 @@ import { HiArrowRight } from 'react-icons/hi';
 import type { Theme } from 'theme-ui';
 import { BaseStyles, ThemeProvider } from 'theme-ui';
 import { theme as baseTheme } from '../index';
-import { scaleAsArray } from '../utils';
+// import { scaleAsArray } from '../utils';
 
 const Sheet: React.FC<{ theme: Theme; name: string }> = ({
   theme = baseTheme,
@@ -34,7 +34,7 @@ const Sheet: React.FC<{ theme: Theme; name: string }> = ({
 }) => {
   return (
     <ThemeProvider theme={theme}>
-      <Container sx={{ size: 'readable' }}>
+      <Container sx={{ size: 'container' }}>
         <Head>
           <title>AYR Designsystem</title>
         </Head>

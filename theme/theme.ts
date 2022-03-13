@@ -13,8 +13,15 @@ export const theme = merge(system, {
     container: 1205,
     readable: 770,
   },
-  colors,
-  fonts,
+  colors: {
+    ...colors,
+    primary: colors.blue,
+    secondary: colors.blue02,
+    background: colors.blue06
+  },
+  fonts: {
+    body: [fonts.regular, system.fonts.body].join(', '),
+  },
   fontWeights,
   text,
   buttons,
@@ -30,9 +37,7 @@ export const theme = merge(system, {
     primary: {
       display: 'flex',
       flexDirection: 'column',
-      p: 4,
       gap: 4,
-      bg: 'white',
     },
   },
 });
